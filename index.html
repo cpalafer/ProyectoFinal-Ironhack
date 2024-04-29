@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JUEGO: HUNDIR LA FLOTA</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body id="padre">
+        <div class="Seccion-principal">
+            <h1>VAMOS A HUNDIR SU FLOTA!!</h1>
+        </div>
+        <button onclick="toggleTexto()">Instrucciones para jugar</button> <!--Botón para que aparezca y desaparezcan las instrucciones al clickar-->
+        <div id="instrucciones"class="oculto">
+            <h4>Instrucciones del juego:</h4>
+            <h5><p>Bienvenido al juego de Hundir la Flota. Aquí encontrarás las instrucciones para jugar:</p></h5>
+
+            <h4>Objetivo del Juego</h4>
+            <h5><p>El objetivo del juego es hundir todos los barcos enemigos antes de que se acabe el tiempo y desembarquen en tu territorio.</p></h5>
+    
+            <h4>Tablero de Juego</h4>
+            <h5><p>El tablero de juego se compone de una cuadrícula de celdas. 
+                Cada celda representa una posición en el océano donde podrían estar escondidos los barcos.</p></h5>
+    
+            <h4>Colocación de los Barcos</h4>
+            <h5><p>Los barcos son colocados de forma aleatoria en posición vertical u horizontal. Cuidado! Los barcos para ocultarse pueden estar uno al lado del otro.</p></h5>
+    
+            <h4>Juego</h4>
+            <h5><p>Selecciona una celda haciendo click en el tablero para atacar. El tablero moostrará si tu ataque ha impactado un barco enemigo o si ha sido un golpe en el agua. Utiliza la información para planificar tus siguientes movimientos y hundir todos los barcos enemigos.</p></h5>
+    
+            <h4>Fin del Juego</h4>
+            <h5><p>El juego continúa hasta que todos los barcos hayan sido hundidos. 
+                Si logras hundir todos los barcos enemigos antes de que se acabe el tiempo serás el ganador.</p></h5>
+    
+            <h4>Controles</h4>
+            <h5><p>Haz clic en una celda del tablero enemigo para atacar.</p></h5>
+        </div>
+
+        <div class="grid-container" id="tablero">
+            <!-- Las celdas se generarán dinámicamente con JavaScript -->
+          </div>
+
+        <div id="tablero">
+            <!-- Aquí se generará el tablero de juego -->
+        </div>
+       
+        <p id="mensajebarcos"></p>
+        <button id="reiniciar-btn">Reiniciar Juego</button>
+        <p id="mensajetiempo"></p> <!--muestra el mensaje de tiempo agotado-->
+        <p id="tiempo-restante"></p> <!--muestra el tiempo restante de juego-->
+        <p id="mensajefelicitacion"></p> <!--muestra mensaje enhorabuena has ganado-->
+
+        <script src="index.js"></script>
+    </body>
+</html>

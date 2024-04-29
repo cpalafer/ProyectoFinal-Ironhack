@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('https://th.bing.com/th/id/R.e7f6fb9692609dd7f0fc301aab6e4330?rik=DUMg67bJXAajTQ&riu=http%3a%2f%2fgamehag.com%2fimg%2fgames%2fbackground%2fseafight.jpg&ehk=Qio%2fbYD0iI2kJzLo0I%2fO%2bsUUZnHzDmaauZ71DgKbtHI%3d&risl=&pid=ImgRaw&r=0');
+  background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.Seccion-principal{
+  color: #ff3c00;
+  text-align: center;
+}
+
+#instrucciones {
+  color:black;
+  background-color: white;
+  margin: 20px;
+  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.oculto {  /* Para ocultar o ver las instrucciones del juego*/
+  display: none;
+}
+
+h1 {
+  color: #0077cc;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 1px;
+  margin: 20px auto;
+  border: 2px solid #0077cc;
+  width: 420px;
+  height: 420px;
+  background-color: #88c7dc;
+}
+
+.grid-item {
+  background-color: #94c3d0;
+  border: 1px solid #0077cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ship {
+  background-color: #ff0000;
+}
+
+.hit {
+  background-color: #d9534f;
+}
+
+.miss {
+  background-color: #5bc0de;
+}
+
+#mensajebarcos {
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #5bc0de;
+  background-size: 200px;
+  color: red;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#tiempo-restante{
+  color: white;
+}
+
+#mensajetiempo{
+  color:red
+}
+
+#mensajefelicitacion{
+  color:red
+}
